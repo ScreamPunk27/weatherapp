@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#myApp {
+    height: 100vh;
+    width: 100%;
+    background: #dfdfdf;
+}
+
+#myApp h1 {
+    display: block;
+}
+
+.screen {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+#input-city {
+    width: 50%;
+    font-size: 1.7em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: .5em;
+    border: none;
+    border-bottom: 3px solid #000;
+    background: #bfbfbf;
+}
+
+#input-city:focus {
+    outline: none;
+    border-bottom: 5px solid #5f9a55;
+    color: #5f9a55;
+}
+
+.right {}
+
+.nuevo-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    color: #2f2f2f;
+    border: solid 5px #00000077;
+    border-radius: 20px;
+}
+
+.container-div {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.nav {
+    height: 15vh;
+    background-color: #2471A3;
+    color: #fff;
+    text-align: center;
+}
+
+.nav h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#btn-switch {
+    margin-top: .5em;
+    padding: .8em;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: #F1C40F;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* #btn-switch:active {
+    box-shadow: none;
+    background: #2ECC71;
+} */
+
+#buttons {
+    margin-top: .5em;
+    position: relative;
+}
+
+#btn-celsius,
+#btn-fahrenheit {
+    position: absolute;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #2471A3;
+}
+
+#btn-celsius {
+    display: none;
+}
+
+#btn-fahrenheit.hideFah {
+    display: none;
+}
+
+#btn-fahrenheit.showFah {
+    display: block;
+}
+
+#btn-celsius.hideCel {
+    display: none;
+}
+
+#btn-celsius.showCel {
+    display: block;
+}
